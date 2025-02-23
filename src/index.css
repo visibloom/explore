@@ -1,95 +1,108 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-.mirror{
-    -webkit-box-reflect: below 0.5em linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
+.mirror {
+  -webkit-box-reflect: below 0.5em
+    linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
 }
-.visi-bg-img{
-    background: url("assets/hero_image.png");
-    background-size: cover;
-    background-position: center
+.visi-bg-img {
+  background: url("assets/hero_image.png");
+  background-size: cover;
+  background-position: center;
 }
-@layer components{
-    .visi-bg{
-        @apply bg-slate-200;
-    }
-    .visiButton{
-        @apply 
-        bg-fuchsia-700 shadow-md shadow-fuchsia-800/60 text-white
+@keyframes fadeIn {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+.fadeIn{
+    animation: fadeIn 0.7s forwards;
+}
+/* Tailwind Classes */
+@layer components {
+  /* NAVBAR */
+  .visi-navbar {
+    @apply justify-between fixed z-10 top-0 w-full transition-all duration-500;
+  }
+  .visi-bg {
+    @apply bg-fuchsia-200;
+  }
+  .visiButton {
+    @apply bg-fuchsia-700 shadow-md shadow-fuchsia-800/60 text-white
         hover:bg-fuchsia-600 hover:text-white active:translate-0 active:shadow-fuchsia-800 active:shadow-sm
         py-2 px-3 
         -translate-y-0.5
         rounded-md 
         text-sm font-bold
         transition-all duration-[.3s];
-    }
-    .visiButton-outline{
-        @apply 
-        bg-blend-normal border-2 border-fuchsia-500 text-fuchsia-500
+  }
+  .visiButton-outline {
+    @apply bg-blend-normal border-2 border-fuchsia-500 text-fuchsia-500
         hover:bg-fuchsia-500 hover:text-white
         py-2 px-3 
         rounded-md 
         text-sm font-bold
         transition-all duration-[.3s];
-    }
-    .visiButton-ghost{
-        @apply bg-transparent border border-fuchsia-600 text-fuchsia-600 shadow-md shadow-fuchsia-600/40
+  }
+  .visiButton-ghost {
+    @apply bg-transparent border border-fuchsia-600 text-fuchsia-600 shadow-md shadow-fuchsia-600/40
         hover:bg-fuchsia-600 hover:text-white active:shadow-fuchsia-800 active:shadow-sm active:translate-y-0
         transition-all duration-[.3s]
         py-2 px-3 
         rounded-md 
         -translate-y-0.5
-        text-sm font-bold
-    }
-
-    
-    .visiIconBtn{
-        @apply
-        relative
+        text-sm font-bold;
+  }
+  .visiIconBtn {
+    @apply relative
         border-2 border-fuchsia-600 text-fuchsia-600 
         hover:text-white
         w-10 h-10 z-10
         rounded-full
-        overflow-hidden
-    }
-    .visiIconBtn svg, .visiIconBtn i {
-        @apply absolute top-1/2 left-1/2 -translate-1/2 z-10 pointer-events-none;
-    }
-    .visiIconBtn::before{
-        @apply absolute content-[''] bg-fuchsia-600 w-full h-full 
+        overflow-hidden;
+  }
+  .visiIconBtn svg,
+  .visiIconBtn i {
+    @apply absolute top-1/2 left-1/2 -translate-1/2 z-10 pointer-events-none;
+  }
+  .visiIconBtn::before {
+    @apply absolute content-[''] bg-fuchsia-600 w-full h-full 
         top-0 left-0 scale-0 transition-transform duration-300 rounded-full;
-    }
-    .visiIconBtn:hover::before {
-        @apply scale-105;
-    }
-    
-    .visiIconInvert{
-        @apply
-        relative
+  }
+  .visiIconBtn:hover::before {
+    @apply scale-105;
+  }
+
+  .visiIconInvert {
+    @apply relative
         border-2 border-slate-200 text-slate-200 
         hover:text-fuchsia-600
         w-10 h-10 z-10
-        rounded-full
-    }
-    .visiIconInvert svg, .visiIconInvert i {
-        @apply absolute top-1/2 left-1/2 -translate-1/2 z-10 pointer-events-none;
-    }
-    .visiIconInvert::before{
-        @apply absolute content-[''] bg-slate-200 w-full h-full 
+        rounded-full;
+  }
+  .visiIconInvert svg,
+  .visiIconInvert i {
+    @apply absolute top-1/2 left-1/2 -translate-1/2 z-10 pointer-events-none;
+  }
+  .visiIconInvert::before {
+    @apply absolute content-[''] bg-slate-200 w-full h-full 
         top-0 left-0 scale-0 transition-transform duration-300 rounded-full;
-    }
-    .visiIconInvert:hover::before {
-        @apply scale-105;
-    }
+  }
+  .visiIconInvert:hover::before {
+    @apply scale-105;
+  }
+  /* Navbar */
 
-
-    .flex-container{
-        @apply flex justify-evenly;
-    }
-    .flex-center{
-        @apply flex justify-center;
-    }
-    .flex-between{
-        @apply flex justify-between;
-    }
+  /* Transitions */
+  .fadeIn {
+  }
+  /* Transitions */
+  .flex-container {
+    @apply flex justify-evenly;
+  }
+  .flex-center {
+    @apply flex justify-center;
+  }
+  .flex-between {
+    @apply flex justify-between;
+  }
 }
