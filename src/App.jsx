@@ -12,8 +12,8 @@ function App() {
     <Navbar />
     <HeroSection />
     <About />
-    <Services />
-    <Projects />
+    {/* <Services /> */}
+    {/* <Projects /> */}
     <PageFooter />
     </>
   );

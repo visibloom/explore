@@ -24,7 +24,7 @@
     @apply justify-between fixed z-10 top-0 w-full transition-all duration-500;
   }
   .visi-bg {
-    @apply bg-white shadow;
+    @apply bg-fuchsia-200 shadow;
   }
   .visiButton {
     @apply bg-fuchsia-700 shadow-md shadow-fuchsia-800/60 text-white

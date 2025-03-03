@@ -4,7 +4,7 @@ import placeholder2 from "../assets/placeholder2.png"
 export default function About(){
     return(
         <>
-        <div className="mt-8 min-h-screen text-black">
+        <div className="my-18 min-h-screen text-black">
             <div className="mx-44">
                 <h2 className="subheading">ABOUT US</h2>
                 <p className="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, fugit eius, ratione maxime at sint pariatur autem, ducimus explicabo officia culpa. Aspernatur itaque quaerat amet veniam laudantium! Maiores, iste? Id nisi incidunt repellat ducimus error aut culpa modi tenetur architecto ipsum omnis, quae et aliquid voluptatibus minus, hic qui, iusto nihil distinctio vitae molestias repellendus nulla. Quo atque quasi consequatur, quos omnis soluta, odit cumque officiis, fuga rem repellat velit minus aliquam neque natus reiciendis provident laboriosam eaque sequi voluptates.</p>
