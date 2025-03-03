@@ -24,7 +24,7 @@
     @apply justify-between fixed z-10 top-0 w-full transition-all duration-500;
   }
   .visi-bg {
-    @apply bg-fuchsia-200;
+    @apply bg-white shadow;
   }
   .visiButton {
     @apply bg-fuchsia-700 shadow-md shadow-fuchsia-800/60 text-white
@@ -92,10 +92,7 @@
   }
   /* Navbar */
 
-  /* Transitions */
-  .fadeIn {
-  }
-  /* Transitions */
+  /* utilities */
   .flex-container {
     @apply flex justify-evenly;
   }
@@ -105,4 +102,27 @@
   .flex-between {
     @apply flex justify-between;
   }
+  .subheading{
+    @apply font-extrabold text-5xl mb-2 tracking-tighter bg-gradient-to-br from-purple-700 via-fuchsia-600 to-fuchsia-400 text-transparent bg-clip-text;
+  }
+  .subtitle{
+    @apply font-bold text-4xl mb-2 tracking-tighter
+  }
+  .paragraph{
+    @apply mb-3 text-justify
+  }
+  .visi-divider{
+    @apply flex items-center justify-center my-10 rounded-2xl shadow bg-fuchsia-600 text-white h-20 text-2xl font-semibold font-mono
+  }
+  .quote{
+    @apply text-3xl font-serif italic leading-10
+  }
+  .quoter{
+    @apply text-2xl font-serif italic text-right mt-5
+  }
+  body{
+    font-family: "Poppins"
+  }
+  /* utilities */
+
 }
