@@ -17,6 +17,9 @@
 .fadeIn{
     animation: fadeIn 0.7s forwards;
 }
+body{
+  font-family: "Poppins"
+}
 /* Tailwind Classes */
 @layer components {
   /* NAVBAR */
@@ -102,27 +105,36 @@
   .flex-between {
     @apply flex justify-between;
   }
+  /* Hero */
+  .heading{
+    @apply text-7xl tracking-tight font-extrabold max-sm:text-3xl;
+  }
+  .hero-paragraph{
+    @apply w-xl text-xl py-6 max-sm:w-auto max-sm:text-sm max-sm:py-3;
+  }
+  /* Hero */
+
+  /* About us */
   .subheading{
-    @apply font-extrabold text-5xl mb-2 tracking-tighter bg-gradient-to-br from-purple-700 via-fuchsia-600 to-fuchsia-400 text-transparent bg-clip-text;
+    @apply font-extrabold text-5xl mb-2 tracking-tighter bg-gradient-to-br from-purple-700 via-fuchsia-600 to-fuchsia-400 text-transparent bg-clip-text max-sm:text-xl;
   }
   .subtitle{
     @apply font-bold text-4xl mb-2 tracking-tighter
   }
   .paragraph{
-    @apply mb-3 text-justify
+    @apply mb-3 text-justify max-sm:text-xs
   }
   .visi-divider{
-    @apply flex items-center justify-center my-10 rounded-2xl shadow bg-fuchsia-600 text-white h-20 text-2xl font-semibold font-mono
+    @apply flex text-center items-center justify-center my-10 rounded-2xl shadow bg-fuchsia-600 text-white h-20 text-2xl font-semibold font-mono max-sm:text-sm max-sm:my-4
   }
   .quote{
-    @apply text-3xl font-serif italic leading-10
+    @apply text-3xl font-bold font-serif italic leading-10 max-sm:text-sm max-sm:leading-4
   }
   .quoter{
-    @apply text-2xl font-serif italic text-right mt-5
+    @apply text-2xl font-serif italic text-right mt-5 max-sm:text-base max-sm:mt-2
   }
-  body{
-    font-family: "Poppins"
-  }
+  /* About us */
+
   /* utilities */
 
 }

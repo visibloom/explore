@@ -47,15 +47,15 @@ function Navbar() {
       <div ref={navRef} className="navbar visi-navbar">
         <div className="flex">
           <a ref={logoRef} href="#top" className="flex">
-            <img src={logo} alt="" className="w-40"/>
+            <img src={logo} alt="" className="w-40 max-sm:w-30"/>
           </a>
         </div>
         <div className="flex-none">
-          <div ref={btnGroup} className="flex gap-4">
+          <div ref={btnGroup} className="flex gap-4 max-sm:gap-2 ">
             {iconButtons.map(({iconComponent, className, href}, index) => 
                <NavButtonIcon className={className} key={index} IconComponent={iconComponent()} pathlink={href}/>
             )}
-            <NavButton attributes={{className: "visiButton"}} label={"Contact Us!"} />
+            <NavButton attributes={{className: "visiButton max-sm:hidden"}} label={"Contact Us!"} />
           </div>
         </div>
       </div>

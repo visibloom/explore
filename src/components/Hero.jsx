@@ -33,10 +33,10 @@ export default function HeroSection() {
       <div id="top" className="hero min-h-screen visi-bg-img text-fuchsia-600">
         <div className="hero-content text-center">
           <div className="max-w-fit place-items-center">
-            <h1 className="text-7xl tracking-tight font-extrabold">
+            <h1 className="heading">
               Hi, <span className="text-fuchsia-800">{greet}!</span>
             </h1>
-            <p ref={msgRef} key={index.current} className="w-xl text-xl py-6 fadeIn">{heroMsg}</p>
+            <p ref={msgRef} key={index.current} className="hero-paragraph">{heroMsg}</p>
             <button className="visiButton-ghost ">Explore</button>
           </div>
         </div>
