@@ -37,7 +37,7 @@ export default function HeroSection() {
               Hi, <span className="text-fuchsia-800">{greet}!</span>
             </h1>
             <p ref={msgRef} key={index.current} className="hero-paragraph">{heroMsg}</p>
-            <button className="visiButton-ghost ">Explore</button>
+            <a href="#about" className="visiButton-ghost">Explore</a>
           </div>
         </div>
       </div>

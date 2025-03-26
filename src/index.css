@@ -27,7 +27,7 @@ body{
     @apply justify-between fixed z-10 top-0 w-full transition-all duration-500;
   }
   .visi-bg {
-    @apply bg-fuchsia-200 shadow;
+    @apply bg-gradient-to-bl from-purple-100 to-fuchsia-300 shadow;
   }
   .visiButton {
     @apply bg-fuchsia-700 shadow-md shadow-fuchsia-800/60 text-white
@@ -80,7 +80,7 @@ body{
         border-2 border-slate-200 text-slate-200 
         hover:text-fuchsia-600
         w-10 h-10 z-10
-        rounded-full;
+        rounded-full max-sm:border-fuchsia-600 max-sm:text-fuchsia-600 max-sm:hover:text-white;
   }
   .visiIconInvert svg,
   .visiIconInvert i {
@@ -88,7 +88,7 @@ body{
   }
   .visiIconInvert::before {
     @apply absolute content-[''] bg-slate-200 w-full h-full 
-        top-0 left-0 scale-0 transition-transform duration-300 rounded-full;
+        top-0 left-0 scale-0 transition-transform duration-300 rounded-full max-sm:bg-fuchsia-600;
   }
   .visiIconInvert:hover::before {
     @apply scale-105;
@@ -105,6 +105,12 @@ body{
   .flex-between {
     @apply flex justify-between;
   }
+  .visi-section{
+    @apply my-18 max-sm:my-10 min-h-screen text-black
+  }
+  .visi-container{
+    @apply mx-44 max-sm:mx-4
+  }
   /* Hero */
   .heading{
     @apply text-7xl tracking-tight font-extrabold max-sm:text-3xl;
@@ -116,10 +122,10 @@ body{
 
   /* About us */
   .subheading{
-    @apply font-extrabold text-5xl mb-2 tracking-tighter bg-gradient-to-br from-purple-700 via-fuchsia-600 to-fuchsia-400 text-transparent bg-clip-text max-sm:text-xl;
+    @apply font-extrabold text-5xl mb-2 tracking-tighter bg-gradient-to-br from-purple-700 via-fuchsia-600 to-fuchsia-400 text-transparent bg-clip-text max-sm:text-4xl;
   }
   .subtitle{
-    @apply font-bold text-4xl mb-2 tracking-tighter
+    @apply font-bold text-4xl mb-2 tracking-tighter bg-gradient-to-br from-purple-700 via-fuchsia-600 to-fuchsia-400 text-transparent bg-clip-text
   }
   .paragraph{
     @apply mb-3 text-justify max-sm:text-xs
@@ -128,12 +134,18 @@ body{
     @apply flex text-center items-center justify-center my-10 rounded-2xl shadow bg-fuchsia-600 text-white h-20 text-2xl font-semibold font-mono max-sm:text-sm max-sm:my-4
   }
   .quote{
-    @apply text-3xl font-bold font-serif italic leading-10 max-sm:text-sm max-sm:leading-4
+    @apply text-4xl font-bold font-serif italic leading-12 max-sm:text-sm max-sm:leading-4
   }
   .quoter{
     @apply text-2xl font-serif italic text-right mt-5 max-sm:text-base max-sm:mt-2
   }
   /* About us */
+
+  /* Services */
+  .service-card{
+    @apply shadow-black/30 shadow-md bg-gradient-to-b from-fuchsia-100 to-fuchsia-300 transition-colors duration-[0.3s] hover:bg-gradient-to-b hover:from-fuchsia-600 hover:to-fuchsia-400 h-60 rounded-2xl p-2
+  }
+  /* Services */
 
   /* utilities */
 

@@ -8,7 +8,7 @@ function PageFooter() {
   ];
   return (
     <>
-      <footer className="footer visi-bg sm:footer-horizontal text-fuchsia-500 p-10">
+      <footer className="footer visi-bg sm:footer-horizontal text-fuchsia-800 p-10">
         <aside className="self-center place-items-center text-center">
           <svg
             width="50"
