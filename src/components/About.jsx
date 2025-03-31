@@ -31,7 +31,7 @@ export default function About(){
     },{scope: aboutRef})
     return(
         <>
-        <div id="about" ref={aboutRef} className="visi-section scroll-m-20">
+        <div id="about" ref={aboutRef} className="visi-section scroll-m-20 overflow-hidden">
             <div className="visi-container">
                 <h2 className="subheading max-sm:px-3 fadeUp">ABOUT US</h2>
                 <p className="paragraph max-sm:px-3 fadeUp">Visibloom was born from a shared passion for helping businesses thrive in the digital world. Founded by three college graduates with diverse skills, we came together with a vision to make social media management more accessible and impactful. At Visibloom, we believe every business has a unique story to tell — and we're here to help amplify that voice. Whether it's crafting engaging content, optimizing your online presence, or building meaningful connections with your audience, we're dedicated to helping your brand bloom across social platforms.</p>

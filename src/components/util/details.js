@@ -8,6 +8,4 @@ export const heroMessage = [
 
 export const serviceCards = [
   images.carousel.carousel1,
-  images.carousel.carousel2,
-  images.carousel.carousel3,
 ]

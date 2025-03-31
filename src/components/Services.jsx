@@ -34,7 +34,7 @@ export default function Services() {
         <div className="visi-container">
           <h2 className="subheading text-center fadeUp">Our Services</h2>
           <p className="paragraph text-center fadeUp">We offer personalized social media management, content creation and digital strategy to help businesses grow and thrive online.</p>
-          <div className="grid grid-cols-3 gap-4 px-5 max-sm:grid-cols-1">
+          <div className="grid grid-cols-1 gap-4 px-5">
             {serviceCards.map((imgs, index)=>(
               <div className="service-card" key={index}>
                 <Carousel carouselItem={imgs}/>
