@@ -5,7 +5,7 @@ export default function Carousel({carouselItem = []}) {
         {carouselItem.map(({src, details, title}, index)=>(
           <div key={index} id={`item${index}`} className="carousel-item h-full">
             <div className="carousel-container">
-              <img src={src} className="w-full" />
+              <img src={src} className="w-full max-sm:w-[320px]" />
               <div className="carousel-details">
                 <h1 className="text-center text-3xl mb-3 font-extrabold">{title}</h1>
                 <p>{details}</p>
