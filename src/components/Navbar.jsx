@@ -62,7 +62,7 @@ function Navbar() {
 
   return (
     <>
-      <div ref={navRef} className="navbar visi-navbar">
+      <div ref={navRef} className="navbar visi-navbar visi-bgv">
         <div className="flex">
           <a href="#top" className="flex" id="logo">
             <img src={logo} alt="" className="w-40 max-sm:w-30" />
