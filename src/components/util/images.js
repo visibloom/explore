@@ -11,11 +11,26 @@ export const images = {
     },
     carousel:{
         carousel1:[
-            "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
-            "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
-            "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
-            "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-            "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
+            { 
+                src: "https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
+                details: "This is the details for carousel1, this carousel is still under development... please bare with me..."
+            },
+            { 
+                src: "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",
+                details: "This is the details for carousel2, this carousel is still under development... please bare with me..."
+            },
+            { 
+                src: "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
+                details: "This is the details for carousel3, this carousel is still under development... please bare with me..."
+            },
+            { 
+                src: "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
+                details: "This is the details for carousel4, this carousel is still under development... please bare with me..."
+            },
+            { 
+                src: "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
+                details: "This is the details for carousel5, this carousel is still under development... please bare with me..."
+            },
         ],
     }
 };
