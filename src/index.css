@@ -162,7 +162,7 @@ body{
     @apply translate-y-0
   }
   .carousel-details{
-    @apply indent-2.5 absolute top-0 left-0 p-3 bg-fuchsia-800/90 h-full text-white translate-y-[100%] transition-transform duration-200 ease-in
+    @apply indent-2.5 text-justify text-sm absolute top-0 left-0 p-3 bg-fuchsia-800/90 h-full text-white translate-y-[100%] transition-transform duration-200 ease-in
   }
   /* Services */
 
