@@ -5,11 +5,18 @@
   -webkit-box-reflect: below 0.5em
     linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.25));
 }
-/* .visi-bg-img {
+.visi-bg-img {
   background: url("assets/hero_image.png");
   background-size: cover;
   background-position: center;
-} */
+}
+@media (max-width: 465px) {
+  .visi-bg-img {
+    background: linear-gradient(rgb(246, 233, 255, 0.7), rgb(246, 233, 255, 0.7)), url('./assets/mobile-bg-3.jpg');
+    background-size: cover;
+    background-position: left bottom;
+  }
+}
 @keyframes fadeIn {
     from{opacity: 0}
     to{opacity: 1}
@@ -119,7 +126,7 @@ body{
     @apply w-xl text-xl py-6 max-sm:w-auto max-sm:text-sm max-sm:py-3;
   }
   .visi-bg-img {
-    @apply bg-[url(./assets/hero_image.png)] max-sm:bg-[url(./assets/mobile-bg.jpg)] bg-cover bg-center;
+    /* @apply bg-[url(./assets/hero_image.png)] max-sm:bg-[url(./assets/mobile-bg-4.jpg)]; */
   }
   /* Hero */
 
