@@ -153,7 +153,7 @@ body{
 
   /* Services */
   .service-card{
-    @apply shadow-black/30 shadow-md bg-gradient-to-b from-fuchsia-100 to-fuchsia-300 transition-colors duration-[0.3s] hover:bg-gradient-to-b hover:from-fuchsia-600 hover:to-fuchsia-400 rounded-2xl p-2
+    @apply shadow-black/30 shadow-md bg-gradient-to-b from-fuchsia-600 to-fuchsia-400 transition-colors duration-[0.3s] rounded-2xl p-2
   }
   .carousel-container{
     @apply relative overflow-y-hidden
@@ -162,7 +162,7 @@ body{
     @apply translate-y-0
   }
   .carousel-details{
-    @apply absolute top-0 left-0 p-3 bg-fuchsia-600/70 h-full text-white translate-y-[100%] transition-transform duration-200 ease-in
+    @apply absolute top-0 left-0 p-3 bg-fuchsia-500/70 h-full text-white translate-y-[100%] transition-transform duration-200 ease-in
   }
   /* Services */
 
